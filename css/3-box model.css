@@ -1,0 +1,46 @@
+body,h1,h2,h3,h4,h5,h6,p {margin: 0;}
+
+ article {
+    border: 10px solid purple;
+
+    /* bdw = border-width */
+    /* bds = border-sty;e */
+    /* bdc = border-color */
+
+    /* 4 Values = Top Right Bottom Left  */
+    /* 3 Values = Top Left&Right Bottom */
+    /* 2 Values = Top&Bottom Left Right */
+    /* 1 Value = t r b l */
+    /* Logical Properties = block or inline */
+    /* block = Top&Bottom */
+    /* inline = Left&Right */
+    
+
+    /* margin: 50px; */
+    margin: 50px 50px 50px 50px;
+    margin-top: ;
+
+    /* padding: 50px; */
+    padding: 50px 50px 50px 50px;
+    padding-top: ;
+
+    
+ }
+
+ h2 {
+    border: 5px groove grey;
+    margin: 5px;
+    padding: 5px;
+ }
+
+p {
+    border: 5px inset greenyellow;
+    margin: 5px;
+    padding: 5px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,49 @@
+html {
+    box-sizing: border-box;
+scroll-behavior: smooth;
+box-sizing: border-box;
+height: 100%;
+width: 100%;
+
+}
+*, *::before, *::after {box-sizing: inherit;}
+
+body, h1,h2,h3,h4,h5,h6,p {margin: 0;}
+
+body {
+    height: inherit;
+    width: inherit;
+}
+
+/* Width & Height | 100% & Auto */
+/* Pixels = px */
+
+.parent {
+    
+    border: 10px solid purple;
+   width: 800px;
+   height: 800px;
+   margin-inline: auto;
+}
+
+/* Percentage = % */
+#child1 {
+    background-color: goldenrod;
+    /* width: 50%; */
+    /* height: 50%; */
+}
+
+/* vw & vh = Viewport Width & viewport height */
+
+#child2 {
+    background-color: aqua;
+
+    width: clamp(390px, 50vw, 780px);
+    height: 50vh;
+}
+
+/* Max Prevents Oversizing */
+max   
+
+/* Min Prevents Undersizing */
+

@@ -1,0 +1,110 @@
+/* selectors: #id| .class |element  */
+
+/* CTRL + SPACE = Trigger Suggest */
+
+/* element */
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-bottom: 500px;
+}
+
+div {
+    color: darkslateblue;
+}
+
+/* .class */
+.children {
+    color: darkorange;
+}
+
+/* #id */
+#child10 {
+    color: blue;
+}
+
+/*  element.class */
+div.children {
+    color: darkblue;
+
+}
+
+/* element#id */
+div#child10 {
+    color:dodgerblue;
+}
+
+/* .classid */
+.children#child9 {
+    color: hotpink;
+
+}
+
+/* element.class */
+div.children#child10 {
+    color: green;
+}
+
+/* Multi-Selector */
+h1,h2,h3,h4,h5,h6 {margin: 0;}
+
+/* Combinators */
+
+/* SPACE = Descendant Selector */
+ul a {
+    text-decoration: none;
+    color: coral;
+}
+
+/* Wildcard Selector */
+ul * {
+    font-style: italic;
+}
+
+/* Direct Child Selector */
+ul > li {
+    list-style-type: none;
+}
+
+ul > li > a {
+    color: navy;
+}
+
+/* [] Attribute Selector */
+
+[title] {
+    color: crimson;
+}
+
+[title="Emmet Lorem"] {
+    color: navy;
+}
+/* ::Pseudo Elements */
+::selection {
+    background-color: yellow;
+}
+
+h1::before {content: '😢';}
+h1::after {content: '😊';}
+ul > li::before {content: '🙌';
+
+}
+
+/* ::Pseudo Class */
+a:hover {color: blueviolet;}
+a:visited {color: green;}
+a:active {color: chartreuse;}
+a:focus {outline: 3px dotted plum;}
+:checked {accent-color: purple;}
+
+
+/* + = Adjacent Sibling Selector */
+
+#adjacent:checked + li{
+    display: none
+}
+
+/* ~ = General Sibling Selector */
+#general:checked ~ li {
+    display: none;
+}
